@@ -10,7 +10,7 @@ A bot for discord in Python.
 
 ## Installation
 
-1. Firts you have to own a [discord account](https://discord.com/). If you don't own an account, you need to create one.
+1. First you have to own a [discord account](https://discord.com/). If you don't own an account, you need to create one.
 1. Then you need to create a server on discord.
 1. [Invite the bot]( https://discord.com/oauth2/authorize?client_id=945615836327059456&scope=bot&permissions=285474001).
 

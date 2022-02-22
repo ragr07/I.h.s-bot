@@ -1,7 +1,6 @@
 ![Bot](https://th.bing.com/th/id/OIP.4JpohfpcReab5qWTH17SQwHaGH?pid=ImgDet&rs=1)
 
-
-
+[![GitHub license](https://img.shields.io/github/license/ragr07/Python_Bot)](https://github.com/ragr07/Python_Bot/blob/Rafa/LICENSE)
 
 
 

@@ -1,6 +1,6 @@
 ![Bot](https://th.bing.com/th/id/OIP.4JpohfpcReab5qWTH17SQwHaGH?pid=ImgDet&rs=1)
 
-[![GitHub license](https://img.shields.io/github/license/ragr07/Python_Bot)](https://github.com/ragr07/Python_Bot/blob/Rafa/LICENSE)  ![Discord Chat](https://img.shields.io/badge/chat-https%3A%2F%2Fdiscord.gg%2FSEUx4An4-green)
+[![GitHub license](https://img.shields.io/github/license/ragr07/Python_Bot)](https://github.com/ragr07/Python_Bot/blob/Rafa/LICENSE)  ![Discord Chat](https://img.shields.io/badge/chat-https%3A%2F%2Fdiscord.gg%2FSEUx4An4-green)   ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py)
 
 
 

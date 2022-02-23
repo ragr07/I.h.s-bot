@@ -15,5 +15,12 @@ A bot for discord in Python.
 1. [Invite the bot]( https://discord.com/oauth2/authorize?client_id=945615836327059456&scope=bot&permissions=285474001).
 
 
+## Commands
+
+| Command | Action |
+| ------- | ------ |
+| !help   | Shows help in channel |
+
+
 ## License
 Apache Lizenz 2.0

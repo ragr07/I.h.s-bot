@@ -37,4 +37,4 @@ A bot for discord in Python.
 Apache Lizenz 2.0
 
 
-*In development...*
+                                                                      *In development...*

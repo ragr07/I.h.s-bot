@@ -16,11 +16,21 @@ A bot for discord in Python.
 1. Use the following commands in any channel.
 
 
+## Prefix
+
+``
+?
+``
+
+
 ## Commands
 
 | Command | Action |
 | ------- | ------ |
-| !help   | Shows help in channel |
+| ?help   | Shows help in channel |
+| ?hello  | Greetings in channel |
+| ?bye    | Adoption in channel |
+| ?clear + figure (1,2,3,4,...)  | Clears messages in channel on the basis of the number |
 
 
 ## License

@@ -1,5 +1,3 @@
-![Bot](https://th.bing.com/th/id/OIP.4JpohfpcReab5qWTH17SQwHaGH?pid=ImgDet&rs=1)
-
 [![GitHub license](https://img.shields.io/github/license/ragr07/Python_Bot)](https://github.com/ragr07/Python_Bot/blob/Rafa/LICENSE) ![Discord](https://img.shields.io/discord/933408863917588510) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/p)    
 
 
@@ -33,8 +31,4 @@ A bot for discord in Python.
 | ?clear + figure (1,2,3,4,...)  | Clears messages in channel on the basis of the number |
 
 
-## License
-Apache Lizenz 2.0
 
-
-                                                            In development...

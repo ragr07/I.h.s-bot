@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/ragr07/Python_Bot)](https://github.com/ragr07/Python_Bot/blob/Rafa/LICENSE) ![Discord](https://img.shields.io/discord/933408863917588510) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/p)    
+ ![Discord](https://img.shields.io/discord/933408863917588510) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/p)    
 
 
 

@@ -19,7 +19,7 @@ async def status_task():
     while True:
         await client.change_presence(activity=discord.Game('?help'), status=discord.Status.online)
         await asyncio.sleep(5)
-        await client.change_presence(activity=discord.Game('FeG Teenkreis'), status=discord.Status.online)
+        await client.change_presence(activity=discord.Game('In his steps'), status=discord.Status.online)
         await asyncio.sleep(5)
         guild: Guild = client.get_guild(945658700163588108)
         if guild:
@@ -64,7 +64,35 @@ async def on_message(message):
                 await mess.add_reaction(':grinning:')
                 await mess.add_reaction('a:ablobhammer:586031065219596302')
 
+    if message.content.startswith('?pin'):
+        args = message.content.split(' ')
+        if len(args) == 2:
+            mess = await message.channel.fetch_message(args[1])
+            if is_not_pinned(mess):
+                await mess.pin()
+                await message.channel.send('{} wurde gepinnt.'.format(mess.content))
+            else:
+                await message.channel.send('{} ist bereits gepinnt.'.format(mess.content))
 
+    if message.content.startswith('?unpin'):
+        args = message.content.split(' ')
+        if len(args) == 2:
+            mess = await message.channel.fetch_message(args[1])
+            if mess.pinned:
+                await mess.unpin()
+                await message.channel.send('{} wurde entpinnt.'.format(mess.content))
+            else:
+                await message.channel.send('{} ist nicht gepinnt.'.format(mess.content))
+
+    if message.content.startswith('?pinlist'):
+        args = message.content.split(' ')
+        if len(args) == 2:
+            channel = message.guild.get_channel(args[1])
+            if channel:
+                await message.channel.send('**Pinliste**\r\n'
+                                           '{}'.format('\r\n'.join([mess.content for mess in channel.pins])))
+
+                                           
 @client.event
 async def on_message(message):
     if message.author.bot:
@@ -88,6 +116,54 @@ async def on_message(message):
                     count = int(args[1]) + 1
                     deleted = await message.channel.purge(limit=count, check=is_not_pinned)
                     await message.channel.send('{} Nachrichten gelöscht.'.format(len(deleted)-1))
+
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if '?Ping' in message.content:
+        await message.channel.send('Pong!')
+
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if '?kick' in message.content:
+        args = message.content.split(' ')
+        if len(args) == 2:
+            member: Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
+            if member:
+                await member.kick()
+                await message.channel.send('{} wurde gekickt.'.format(member.mention))
+
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if '?ban' in message.content:
+        args = message.content.split(' ')
+        if len(args) == 2:
+            member: Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
+            if member:
+                await member.ban()
+                await message.channel.send('{} wurde gebannt.'.format(member.mention))
+
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if '?unban' in message.content:
+        args = message.content.split(' ')
+        if len(args) == 2:
+            member: Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
+            if member:
+                await message.guild.unban(member)
+                await message.channel.send('{} wurde entbannt.'.format(member.mention))
+
 
 
 client.run('')
